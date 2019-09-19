@@ -1,0 +1,98 @@
+$textColor: rgb(255, 255, 255);
+$primaryColor:#990100;
+
+
+@import "./landingImg";
+@import "./Responsive";
+@import "./about";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+  
+
+.container-fluid{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+h4{
+    color: $primaryColor;
+    text-align: center;
+}
+
+
+/*-- nav begings here  ---*/
+
+.navbar{
+    background-color: rgba(255, 255, 255,0.7); 
+    z-index: 1;
+
+        .navbar-brand{
+            height: 3rem;
+        }
+        .navbar-toggler{
+            background-color: $primaryColor;
+        }
+        .collapse .nav-item{
+            padding-left: 2rem;
+
+            .nav-link{
+                color: $primaryColor;
+            }
+        }
+        
+}
+/*-- nav ends here  ---*/
+
+
+
+/*-- About here  ---*/
+.img-fluid{
+    transform: rotate(-90deg);
+    margin-top: 5rem;    
+    margin-bottom:7rem; ;
+}
+
+.container{
+    label{
+        margin-top: 1.5rem;
+    }
+    .progress-bar{
+        background-color: #1afeff;
+    }
+}
+
+/*-- About ends here  ---*/
+
+
+
+/*-- service here  ---*/
+#services{
+    hr{
+        width: 12rem;
+        border-width: .2rem;        
+    }
+    .row{
+        text-align: center;
+        padding: 1rem;
+    }
+    h5{
+        color:$primaryColor;
+        margin-top: 2rem;
+    }
+}
+
+
+/*-- service ends here  ---*/
+
+
+
+/*-- contact here  ---*/
+/*-- contact ends here  ---*/
