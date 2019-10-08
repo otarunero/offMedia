@@ -1,10 +1,10 @@
 /*-- header bg image  ---*/
 .home-inner {
-  background-image: url("/images/wedding-007.jpg");
+  background-image: url("/images/potrait/33.jpg");
 }
 
 .beforeContact {
-  background-image: url("/images/wedding-005.jpg");
+  background-image: url("/images/potrait/30.jpg");
 }
 
 .caption {
@@ -78,7 +78,7 @@
 .beforeContactLanding {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   display: table;
   background: #E9ECEF;
   z-index: -1;
@@ -107,9 +107,56 @@
   will-change: transform;
 }
 
+#potfolio {
+  padding: 1rem;
+  min-height: 50vh;
+}
+
+/*-- nav begings here  ---*/
+.navbar {
+  background-color: rgba(100, 100, 100, 0.7);
+  z-index: 1;
+}
+
+.navbar .navbar-brand {
+  height: 3rem;
+}
+
+.navbar .navbar-toggler {
+  background-color: #990100;
+}
+
+.navbar .nav-item {
+  padding-left: 2rem;
+}
+
+.navbar .nav-item .nav-link {
+  color: #990100;
+}
+
+.navbar .nav-item .btn {
+  background-color: #990100;
+  border: none;
+  color: white;
+}
+
+/*-- nav ends here  ---*/
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+body h4 {
+  color: #990100;
+  text-align: center;
+}
+
+body h5, body h3, body h2 {
+  font-family: "Crimson Text", serif;
 }
 
 .container-fluid {
@@ -129,39 +176,11 @@
           justify-content: center;
 }
 
-h4 {
-  color: #990100;
-  text-align: center;
-}
-
-/*-- nav begings here  ---*/
-.navbar {
-  background-color: rgba(255, 255, 255, 0.7);
-  z-index: 1;
-}
-
-.navbar .navbar-brand {
-  height: 3rem;
-}
-
-.navbar .navbar-toggler {
-  background-color: #990100;
-}
-
-.navbar .collapse .nav-item {
-  padding-left: 2rem;
-}
-
-.navbar .collapse .nav-item .nav-link {
-  color: #990100;
-}
-
-/*-- nav ends here  ---*/
 /*-- About here  ---*/
 .img-fluid {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  margin-top: 5rem;
+  margin-top: 9rem;
   margin-bottom: 7rem;
 }
 
@@ -175,6 +194,10 @@ h4 {
 
 /*-- About ends here  ---*/
 /*-- service here  ---*/
+#services {
+  margin-bottom: 5rem;
+}
+
 #services hr {
   width: 12rem;
   border-width: .2rem;
@@ -192,5 +215,89 @@ h4 {
 
 /*-- service ends here  ---*/
 /*-- contact here  ---*/
+.contact {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+}
+
+.contact h4 {
+  margin: 2rem;
+}
+
+.contact .row {
+  margin-bottom: 0.3rem;
+}
+
+.contact hr {
+  width: 12rem;
+  border-width: .2rem;
+}
+
+#contact {
+  height: 45vh;
+  padding-top: 0;
+}
+
+#contact .btn-secondary {
+  background-color: #990100;
+  color: white;
+}
+
+.socials {
+  margin-bottom: 1.5rem;
+}
+
+.fa {
+  font-size: 1.3rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 /*-- contact ends here  ---*/
+.footer {
+  background-color: #990100;
+  text-align: right;
+}
+
+.footer span {
+  font-size: 0.8rem;
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */

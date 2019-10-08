@@ -1,17 +1,30 @@
 $textColor: rgb(255, 255, 255);
 $primaryColor:#990100;
+$bodyFont:'Work Sans', sans-serif;
+$headingFont:  'Crimson Text', serif;
 
 
 @import "./landingImg";
 @import "./Responsive";
-@import "./about";
-
+@import "./potfolio";
+@import "./navbar";
 
 *{
     padding: 0;
     margin: 0;
 }
 
+body{
+    font-family: $bodyFont;
+    h4{
+        color: $primaryColor;
+        text-align: center;
+    }
+    
+    h5, h3, h2{
+        font-family: $headingFont;
+    }
+}
   
 
 .container-fluid{
@@ -22,41 +35,16 @@ $primaryColor:#990100;
     justify-content: center; 
 }
 
-h4{
-    color: $primaryColor;
-    text-align: center;
-}
 
 
-/*-- nav begings here  ---*/
 
-.navbar{
-    background-color: rgba(255, 255, 255,0.7); 
-    z-index: 1;
-
-        .navbar-brand{
-            height: 3rem;
-        }
-        .navbar-toggler{
-            background-color: $primaryColor;
-        }
-        .collapse .nav-item{
-            padding-left: 2rem;
-
-            .nav-link{
-                color: $primaryColor;
-            }
-        }
-        
-}
-/*-- nav ends here  ---*/
 
 
 
 /*-- About here  ---*/
 .img-fluid{
     transform: rotate(-90deg);
-    margin-top: 5rem;    
+    margin-top: 9rem;    
     margin-bottom:7rem; ;
 }
 
@@ -75,6 +63,7 @@ h4{
 
 /*-- service here  ---*/
 #services{
+    margin-bottom: 5rem;
     hr{
         width: 12rem;
         border-width: .2rem;        
@@ -95,4 +84,78 @@ h4{
 
 
 /*-- contact here  ---*/
+
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+
+    h4{
+        margin: 2rem;
+    }
+    .row{
+        margin-bottom: 0.3rem;
+    }
+    hr{
+        width: 12rem;
+        border-width: .2rem; 
+    }
+}
+
+    #contact{
+        height: 45vh;
+        padding-top:0; 
+
+        .btn-secondary{
+            background-color: $primaryColor;
+            color: white;
+        }
+    }
+    
+    .socials{
+        margin-bottom: 1.5rem;
+    }
+
+    .fa {
+       font-size: 1.3rem;
+       width: 2rem;
+       height: 2rem;
+       text-align: center;
+       padding: 6px;
+       text-decoration: none;
+       margin: 5px 2px;
+       border-radius: 30%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
 /*-- contact ends here  ---*/
+
+.footer{
+    background-color: $primaryColor;
+    text-align: right;
+    span{
+        font-size: 0.8rem;
+        color: white;
+    }
+}

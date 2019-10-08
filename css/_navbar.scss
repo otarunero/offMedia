@@ -1,0 +1,30 @@
+
+
+/*-- nav begings here  ---*/
+
+.navbar{
+    background-color: rgba(100, 100, 100, 0.7); 
+    z-index: 1;
+
+        .navbar-brand{
+            height: 3rem;
+        }
+        .navbar-toggler{
+            background-color: $primaryColor;
+        }
+        .nav-item{
+            padding-left: 2rem;
+
+            .nav-link{
+                color: $primaryColor;
+            }
+            .btn{
+                background-color: $primaryColor;
+                border: none;
+                color: white;
+            }
+        }
+        
+}
+/*-- nav ends here  ---*/
+

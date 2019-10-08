@@ -5,10 +5,10 @@
 /*-- header bg image  ---*/
 
 .home-inner{
-    background-image: url('/images/wedding-007.jpg');
+    background-image: url('/images/potrait/33.jpg');
 }
 .beforeContact{
-    background-image: url('/images/wedding-005.jpg');
+    background-image: url('/images/potrait/30.jpg');
 }
 
 
@@ -94,13 +94,13 @@
   .beforeContactLanding {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: table;
     background: #E9ECEF;
     z-index: -1;
     
 
-    .beforeContactWrap {
+    .beforeContactWrap{
         clip: rect(0, auto, auto, 0);
         position: absolute;
         top: 0;
